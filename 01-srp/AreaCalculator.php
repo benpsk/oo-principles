@@ -14,20 +14,14 @@ class AreaCalculator
     public function sum()
     {
         foreach ($this->shapes as $shape) {
-            if ($this->getName($shape, 'Square')) {
+            if (is_a($shape, 'Ood\Srp\Square')) {
                 $area[] = pow($shape->length, 2);
-            } elseif ($this->getName($shape, 'Circle')) {
+            } elseif (is_a($shape, 'Ood\Srp\Circle')) {
                 $area[] = pi() * pow($shape->radius, 2);
             } 
         }
 
         return array_sum($area);
-    }
-
-    private function getName($shape, $str) : bool
-    {
-        $name = new \ReflectionClass($shape);
-        return $name->getShortName() == $str ? true : false;
     }
 
     // output shoult not be here

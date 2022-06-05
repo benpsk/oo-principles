@@ -2,6 +2,8 @@
 
 namespace Ood\Ocp;
 
+use Exception;
+
 class AreaCalculator
 {
     protected $shapes;
@@ -14,7 +16,11 @@ class AreaCalculator
     public function sum()
     {
         foreach ($this->shapes as $shape) {
-            $area[] = $shape->area();
+            if ($shape instanceof ShapeInterface) {
+                $area[] = $shape->area();
+            } else {
+                throw new Exception('Interface not found!');
+            }
         }
 
         return array_sum($area);

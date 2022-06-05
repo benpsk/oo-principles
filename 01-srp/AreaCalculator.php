@@ -8,7 +8,6 @@ class AreaCalculator
 
     public function __construct($shapes = [])
     {
-        var_dump('areas class');
         $this->shapes = $shapes;
     }
 

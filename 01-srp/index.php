@@ -1,9 +1,9 @@
 <?php 
 
-include_once 'Circle.php';
-include_once 'Square.php';
-include_once 'AreaCalculator.php';
-include_once 'SumCalculatorOutputter.php';
+include __DIR__ . '/Circle.php';
+include __DIR__ . '/Square.php';
+include __DIR__ . '/AreaCalculator.php';
+include __DIR__ . '/SumCalculatorOutputter.php';
 
 use Ood\Srp\Circle;
 use Ood\Srp\Square;

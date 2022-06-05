@@ -3,7 +3,6 @@ namespace Ood\Srp;
 
 use Ood\Srp\AreaCalculator;
 
-include_once 'AreaCalculator.php';
 
 
 class SumCalculatorOutputter

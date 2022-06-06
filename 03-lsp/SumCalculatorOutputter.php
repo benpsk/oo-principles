@@ -3,7 +3,6 @@ namespace Ood\Lsp;
 
 use Ood\Lsp\AreaCalculator;
 
-
 class SumCalculatorOutputter
 {
     protected $calculator;

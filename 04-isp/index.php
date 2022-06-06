@@ -1,5 +1,6 @@
 <?php 
 
+include __DIR__ . '/ManageShapeInterface.php';
 include __DIR__ . '/ShapeInterface.php';
 include __DIR__ . '/Circle.php';
 include __DIR__ . '/Square.php';
